@@ -3,55 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire 2</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="user.css">
 </head>
 <body>
+    <section>
+        <div class="imgBox"></div>
     <div class="container">
-            <form class="form-users">
-                <h1 style="text-align: center;">Set the event</h1>
-                <div class="reverse">
-                    <label for="Price">Price</label>
-                    <input type="number" class="form-control" placeholder="$270">
+        <form action="#">
+            <div class="user_details">
+                <div class="input_box">
+                    <label for="name">First Name</label>
+                    <input type="text" id="name"required>
                 </div>
-                <div style="margin-right: 180px;" class="reverse">
-                    <label for="People">People</label>
-                    <select name="" id="" style="color: white;background-color:  #04014E;">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
+                <div class="input_box">
+                    <label for="name">Meal Preference</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div id="input_box" class="input_box">
+                    <label for="name">Last Name</label>
+                    <input style="border: 1px solid red;" type="text" id="name" placeholder="!">
+                </div>
+                <div class="input_box">
+                    <label for="username">Payment Mode</label>
+                    <!-- <input type="text" id="username" required> -->
+                    <div class="gender">
+                        <input type="radio" name="gender" id="radio_1">
+                        <input type="radio" name="gender" id="radio_2">
+                        <input type="radio" name="gender" id="radio_3">
+            
+                        <div class="category">
+                            <label for="radio_1">
+                                <span class="dot one"></span>
+                                <span>Cache</span>
+                            </label>
+                            <label for="radio_2">
+                                <span class="dot two"></span>
+                                <span>Cheque</span>
+                            </label>
+                            <label for="radio_3">
+                                <span class="dot three"></span>
+                                <span>Demande</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <label for="email">Company</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input_box">
+                    <label for="phone">DD/cheque no.</label>
+                    <input type="number" id="phone" required>
+                </div>
+                <div class="input_box">
+                    <label for="pass">Email</label>
+                    <input type="email" id="pass"required>
+                </div>
+                <div class="input_box">
+                    <label for="confirmPass">Drawn on(Bank name)</label>
+                    <input type="password" id="confirmPass" required>
+                </div>
+                <div class="input_box">
+                    <label for="confirmPass">Phone number</label>
+                    <input type="password" id="confirmPass" required>
+                </div>
+                <div class="input_box">
+                    <label for="confirmPass">Payable at</label>
+                    <input type="password" id="confirmPass" required>
                 </div>
 
-                <div class="reverse">
-                    <label for="Name">Name</label>
-                    <input type="text" class="form-control" placeholder="Jonh Do" style="border-bottom: 1px solid white">
-                </div>
-
-                <div class="reverse">
-                    <label for="Mail">Mail</label>
-                    <input type="email" class="form-control" style="border-bottom: 1px solid white">
-                </div>
-
-                <div class="reverse">
-                    <label for="Phone">Phone</label>
-                    <input type="number" class="form-control" style="border-bottom: 1px solid white">
-                </div>
-
-                <div class="reverse">
-                    <label style="margin-left: -20px;" for="Comment">Comment</label>
-                    <textarea style="margin-right: -30px;" name="" id="" cols="24" rows="3" style="border-bottom: 2px solid white"></textarea>
-                </div>
-
-                <button class="btn" style="width: 80px;margin-top: 15px;margin-left: 80px;padding: 10px 20px;width: 150px;" >Send</button>
-            </form>
-
-            <div class="imageBox">
-               <div class="image-holder">
-                <img src="form2.png" alt="">
-                <p style="color: hsla(0, 0%, 100%, 0.5);text-align: center;margin-top: 40px;font-weight:100;">31st East street, New York,NY <br>T987 2345 <br>TINFO@YOURWEB.COM</p>
-               </div>
+            </div>    
+            <div class="don">
+                <p style="margin-bottom: 20%;text-transform: uppercase;font-weight: bold;margin-left: 4%;">. Donnate us </p>
             </div>
-        </div>
+
+            <div class="progress-container">
+                <div class="progress-bar-green"></div>
+                <div class="progress-bar-black"></div>
+                <span class="separator"> <5500> </span>
+              </div>
+
+              <div class="btn">
+                <div class="btn1">
+                    <button style="background-color:#4CAF50;border: 1px solid #4CAF50;padding: 8px 20px;color: #fff;text-transform:uppercase;font-weight: bold;" type="submit">Submit</button>
+                </div>
+                <div class="btn2">
+                    <button style="border: 1px solid #4CAF50;padding: 9px 20px;color: grey;text-transform:uppercase;font-weight: bold;margin-left: 20%;"  type="reset">Reset</button>
+                </div>
+              </div>
+  
+        </form>
+    </div>
+        
+         
+    </section>
 </body>
 </html>
